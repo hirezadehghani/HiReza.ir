@@ -32,7 +32,6 @@
             <script src="{{ asset('/assets/js/tag-it/jquery-ui.min.js') }}" type="text/javascript" charset="utf-8"></script>
             <script src="{{ asset('/assets/js/tag-it/tag-it.min.js') }}" type="text/javascript" charset="utf-8"></script>
 
-            <!-- <input type="text" name="tags" id="allTags" hidden> -->
             <x-adminForm.input name="tags" id="allTags" hidden label="کلمه کلیدی" />
             <ul id="tags">
             </ul>

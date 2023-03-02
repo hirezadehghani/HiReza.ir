@@ -1,3 +1,7 @@
+<?php 
+    // use Faker\Generator as Faker;
+    // use Illuminate\Support\Str as Str;
+?>
 <x-layout>
     
 <section class="hero-wrap js-fullheight text-right" @if(isset($post->thumbnail)) style="background-image: url('{{asset('storage/' . $post->thumbnail) }}');" @endif data-stellar-background-ratio="0.5">
@@ -18,6 +22,18 @@
           <div class="col-lg-8 ftco-animate">
           <h2 class="mb-3">{{$post->title}}</h2>
           {!! $post->body !!}
+          
+        <!-- LIKE BUTTON -->
+      <form method="post" action="/posts/{{$post->slug}}/like" id="like">
+        @csrf
+        <!-- <x-form.input name="like" type="number" value="1" label="" hidden></x-form.input> -->
+        <x-form.button>
+        <span class="icon-heart"></span>
+        {{$post->like}}
+      </x-form-button>
+      </form>
+        <!-- END LIKE BUTTON -->
+
           @if($tags)
           <div class="tag-widget post-tag-container mb-5 mt-5">
               <div class="tagcloud">
@@ -37,10 +53,9 @@
               </div>
             </div>
 
-
             @if($post->comments->count() > 0)
             <div class="pt-5 mt-5" id="comment">
-              <h3 class="mb-5">{{ $post->comments->count() }} Comments</h3>
+              <h3 class="mb-5">{{ $post->comments->count() }} دیدگاه زیبا</h3>
               @else
                 <div id="comment">
               @endif
@@ -70,7 +85,7 @@
               </form>
             </div>
             <div class="sidebar-box ftco-animate">
-            	<h3 class="heading-sidebar">Categories</h3>
+            	<h3 class="heading-sidebar">دسته بندی ها</h3>
               <ul class="categories">
                 @foreach ($categories as $category)
               <li><a href="/?category={{ $category->slug }}#blog-section">{{ $category->name }}<span>({{ $category->posts->count() }})</span></a></li>
@@ -79,7 +94,7 @@
             </div>
 
             <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Recent Blog</h3>
+              <h3 class="heading-sidebar">مطالب اخیر</h3>
               @foreach ($recentPosts->take(4) as $recentPost)
               @if ($recentPost->id == $post->id)
                 @continue;
@@ -96,30 +111,34 @@
                     <time><span class="icon-calendar"></span> {{ $recentPost->created_at->diffForHumans() }}</a></time>
                     <div><a href="/?author={{ $recentPost->author->username }}"><span class="icon-person"></span> {{ $recentPost->author->name }}</a></div>
                     <div><a href="/posts/{{ $recentPost->slug }}#comment"><span class="icon-chat"></span> {{ $recentPost->comments->count() }}</a></div>
+                    <div><a href="/posts/{{ $recentPost->slug }}#like"><span class="icon-heart"></span> {{ $recentPost->like }}</a></div>
                   </div>
                 </div>
               </div>
               @endforeach
             </div>
-            <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Tag Cloud</h3>
+
+            @if(isset($tags))
+
+          <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">برچسب ها</h3>
               <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">house</a>
-                <a href="#" class="tag-cloud-link">office</a>
-                <a href="#" class="tag-cloud-link">building</a>
-                <a href="#" class="tag-cloud-link">land</a>
-                <a href="#" class="tag-cloud-link">table</a>
-                <a href="#" class="tag-cloud-link">interior</a>
-                <a href="#" class="tag-cloud-link">exterior</a>
-                <a href="#" class="tag-cloud-link">industrial</a>
+                @foreach ($tags as $tag)
+                <a href="/" class="tag-cloud-link">{{ $tag }}</a>
+                @endforeach
               </div>
             </div>
 
-            <!-- <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Paragraph</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+            @endif
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">جمله تصادفی از جلال آل احمد</h3>
+              <?php 
+                $faker = Faker\Factory::create('fa_IR');
+              ?>
+              <p>{{ $faker->realText(rand(1, 506),5) . '...' }}</p>
             </div>
-          </div> -->
+          </div>
 
         </div>
       </div>

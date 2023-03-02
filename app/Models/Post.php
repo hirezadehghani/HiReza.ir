@@ -2,13 +2,14 @@
 
 namespace App\Models;
 
+use DB;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'slug', 'excerpt', 'body', 'category_id', 'user_id', 'thumbnail', 'thumbnail_alt'];
+    protected $fillable = ['title', 'slug', 'excerpt', 'body', 'category_id', 'user_id', 'thumbnail', 'thumbnail_alt', 'like'];
 
     protected $with = ['category', 'author', 'post_tags'];
 
@@ -62,5 +63,18 @@ class Post extends Model
     public function post_tags()
     {
         return $this->belongsTo(PostTags_Posts::class);
+    }
+
+    /**
+     * store like in model and database
+     * @var post_id
+     * void
+     */
+
+    public function like(int $post_id): void
+    {
+        DB::table('posts')
+            ->where('id', $post_id)
+            ->increment('like', 1);
     }
 }

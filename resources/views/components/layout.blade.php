@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>های رضا - قواصی در اقیانوس کامپیوتر</title>
+    <title>وب سایت شخصی رضا دهقانی</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
 
@@ -42,7 +42,7 @@
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>پروژه ها</span></a></li>
 	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>بلاگ</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>تماس با من</span></a></li>
-	          <li class="nav-item"><a href="/posts/bug-report" class="nav-link"><span></span>گزارش باگ</a></li>
+	          <!-- <li class="nav-item"><a href="/posts/bug-report" class="nav-link"><span></span>گزارش باگ</a></li> -->
 	        </ul>
 	      </div>
 	    </div>

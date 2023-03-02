@@ -1,4 +1,4 @@
-@props(['posts'])
+@props(['posts', 'tags'])
 
     @if ($posts->count() > 0)
     <div class="row d-flex">

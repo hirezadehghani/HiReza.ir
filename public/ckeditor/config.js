@@ -35,4 +35,10 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
+
+	// my configs
+	config.extraPlugins = 'justify';
+	config.contentsLangDirection = 'rtl';
+
+
 };

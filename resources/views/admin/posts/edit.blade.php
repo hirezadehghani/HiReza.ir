@@ -48,7 +48,7 @@
             <ul id="tags">
                 <?php foreach($postTags as $postTag){ ?>
                     <li><?= $postTag?></li>
-                <?php } ?>categories
+                <?php } ?>
                 
             </ul>
             <input type="text" name="tags" id="allTags" hidden value="{{old('allTags')}}">

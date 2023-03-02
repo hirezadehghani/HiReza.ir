@@ -17,6 +17,7 @@ Route::get('/', [PostController::class, 'index'])->name('home');
 
 Route::get('posts/{post:slug}', [PostController::class, 'show'])->whereAlphaNumeric('POST');
 Route::post('posts/{post:slug}/comments', [PostCommentsController::class, 'store']);
+Route::post('posts/{post:slug}/like', [PostController::class, 'storeLike']);
 
 Route::post('newsletter', NewsletterController::class);
 
@@ -37,7 +38,9 @@ Route::post('admin/posts/create/image_upload', [CKEditorController::class, 'uplo
 Route::middleware('can:admin')->group(function (){
     Route::resource('admin/categories', AdminCategoryController::class)->except('show');
 });
-// Set sybolic link to storage
-Route::get('/storageLink', function () {
+
+// Set symbolic link to storage
+Route::get('/storageLink', function () 
+    {
     return Artisan::call('storage:link');
     });

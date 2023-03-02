@@ -51,9 +51,9 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form method="post"  class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control text-right" placeholder="نام شما">
+                <input disabled type="text" class="form-control text-right" placeholder="نام شما">
               </div>
               <div class="form-group">
                 <input type="text" class="form-control text-right" placeholder="آدرس ایمیل شما">
@@ -65,7 +65,8 @@
                 <textarea name="" id="" cols="30" rows="7" class="form-control text-right" placeholder="متن پیام"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="ارسال پیام" class="btn btn-primary py-3 px-5">
+               <!-- <input type="submit" value="ارسال پیام" class="btn btn-primary py-3 px-5"> -->
+               <span class="btn btn-primary py-3 px-5">به زودی این قابلیت فراهم می شود</span>
               </div>
             </form>
           

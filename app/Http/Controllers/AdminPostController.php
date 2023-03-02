@@ -49,7 +49,7 @@ class AdminPostController extends Controller
             $post_id = $create->id;
         
         $this->storeTags($post_id, $request['tags']);
-        return back()->with('success', 'مطلب اضافه شد!');
+        return redirect("admin/posts/$post_id/edit")->with('success', 'مطلب اضافه شد!');
     }
 
     public function edit(Post $post)
