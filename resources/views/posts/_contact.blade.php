@@ -17,7 +17,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">آدرس</h3>
-	            <p>خراسان جنوبی، بیرجند</p>
+	            <p>خراسان جنوبی، نهبندان</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">

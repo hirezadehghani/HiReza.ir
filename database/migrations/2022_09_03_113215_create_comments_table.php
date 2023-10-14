@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('guestName')->nullable();
             $table->string('guestEmail')->nullable();
             $table->text('guestSite')->nullable();
+            $table->integer('parent_id')->unsigned()->nullable();
             $table->timestamps();
         });
     }

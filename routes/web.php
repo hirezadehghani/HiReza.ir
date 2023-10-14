@@ -6,6 +6,7 @@ use App\Http\Controllers\CKEditorController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PostCommentsController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostTagsController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 use App\Services\newsletter;
@@ -18,6 +19,9 @@ Route::get('/', [PostController::class, 'index'])->name('home');
 Route::get('posts/{post:slug}', [PostController::class, 'show'])->whereAlphaNumeric('POST');
 Route::post('posts/{post:slug}/comments', [PostCommentsController::class, 'store']);
 Route::post('posts/{post:slug}/like', [PostController::class, 'storeLike']);
+
+// tags
+Route::get('tags/{PostTags:tag}', [PostTagsController::class, 'show']);
 
 Route::post('newsletter', NewsletterController::class);
 

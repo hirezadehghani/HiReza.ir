@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('thumbnail')->nullable();
             $table->string('thumbnail_alt')->nullable();
             $table->text('body');
-            $table->integer('like')->default(0);
+            $table->integer('like')->unsigned()->nullable()->default(0);
             $table->timestamps();
             $table->timestamp('published_at')->nullable();
         });

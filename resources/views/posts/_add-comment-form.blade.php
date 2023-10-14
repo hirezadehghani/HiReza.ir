@@ -7,7 +7,7 @@
             @endif
         </h3>
     </header>
-                <form method="POST" class="p-5 bg-dark" action="/posts/{{ $post->slug }}/comments">
+                <form id="comment-form" method="POST" class="p-5 bg-dark" action="/posts/{{ $post->slug }}/comments">
         @csrf
         @guest
             <div class="flex justify-between">
@@ -29,6 +29,30 @@
                 </ul>
             </div>
         @endif
+        <input hidden name="comment-id" value=""
+         autocomplete="off"></input>
         <x-form.button>بفرست بِره</x-submit-button>
 
                 </form>
+
+        @push('footer')
+        <script>     
+        let reply = document.getElementsByName('reply');
+        console.log(reply);
+        
+        Array.from(reply).forEach(async (r) => {
+            let comment_id = r.getAttribute('value');
+            r.addEventListener("click", function ()
+            {
+                // console.log(comment_id);
+                let comment_input = document.getElementsByName('comment-id');
+                comment_input[0].setAttribute('value', comment_id);
+
+                // set comment name to '@' parent comment name
+                // let comment_name = document.getElementById('comment-name');
+                // comment_name = comment_name.innerText;
+                // new_comment_body = document.getElementById('body').value = 'در پاسخ به @' + comment_name + ' ';
+        });
+    });
+        </script>
+        @endpush

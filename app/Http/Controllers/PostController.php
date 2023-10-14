@@ -38,7 +38,8 @@ class PostController extends Controller
             'post' => $post,
             'categories' => Category::latest()->get(),
             'recentPosts' => Post::latest()->get(),
-            'tags' => PostTags::getTags($post->id)
+            'tags' => PostTags::getTags($post->id),
+            'all_tags' => PostTags::getAll(),
         ]);
     }
 

@@ -1,7 +1,3 @@
-<?php 
-    // use Faker\Generator as Faker;
-    // use Illuminate\Support\Str as Str;
-?>
 <x-layout>
     
 <section class="hero-wrap js-fullheight text-right" @if(isset($post->thumbnail)) style="background-image: url('{{asset('storage/' . $post->thumbnail) }}');" @endif data-stellar-background-ratio="0.5">
@@ -53,6 +49,7 @@
               </div>
             </div>
 
+            
             @if($post->comments->count() > 0)
             <div class="pt-5 mt-5" id="comment">
               <h3 class="mb-5">{{ $post->comments->count() }} دیدگاه زیبا</h3>
@@ -61,8 +58,23 @@
               @endif
               <ul class="comment-list">
 
-              @foreach ($post->comments as $comment)
-                    <x-post-comment :comment="$comment" />
+                <!-- if our comment have parent show it below that parent -->
+                @foreach ($post->comments as $comment)
+                
+                @if($comment->parent_id === NULL)
+                <x-post-comment :comment="$comment" />
+
+                @foreach ($post->comments as $reply)
+
+                <!-- if comment is child first check it's parent_id === comment id  -->
+                @if($comment->id === $reply->parent_id)
+                <x-post-comment :comment="$reply" :isreply="true" :parent_id="$comment->id" />
+                @endif
+
+                @endforeach
+                
+                @endif
+
                 @endforeach
               </ul>
               <!-- END comment-list -->
@@ -118,13 +130,13 @@
               @endforeach
             </div>
 
-            @if(isset($tags))
+            @if(isset($all_tags))
 
           <div class="sidebar-box ftco-animate">
               <h3 class="heading-sidebar">برچسب ها</h3>
               <div class="tagcloud">
-                @foreach ($tags as $tag)
-                <a href="/" class="tag-cloud-link">{{ $tag }}</a>
+                @foreach ($all_tags as $tag)
+                <a href="{{ '/tags/' . $tag }}" class="tag-cloud-link">{{ $tag }}</a>
                 @endforeach
               </div>
             </div>
@@ -136,10 +148,10 @@
               <?php 
                 $faker = Faker\Factory::create('fa_IR');
               ?>
-              <p>{{ $faker->realText(rand(1, 506),5) . '...' }}</p>
+              <p>{{ $faker->realText(300,4) . '...' }}</p>
             </div>
           </div>
-
+          
         </div>
       </div>
     </section> <!-- .section -->

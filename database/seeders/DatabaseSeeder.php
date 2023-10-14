@@ -10,6 +10,7 @@ use App\Models\Post;
 use App\Models\User;
 use Faker\Provider\Lorem;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class DatabaseSeeder extends Seeder
@@ -30,6 +31,14 @@ class DatabaseSeeder extends Seeder
         Category::factory(5)->create();
         post::factory(30)->create();
         Comment::factory(10)->create();
+
+        // create admin user tuple
+            DB::table('users')->insert([
+            'username' => 'admin',
+            'name' => 'Reza',
+            'email' => 'test@hireza.ir',
+            'password' => bcrypt('secret'),
+        ]);
 
         // User::truncate();
         // Post::truncate();

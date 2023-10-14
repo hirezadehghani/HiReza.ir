@@ -17,7 +17,7 @@
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>نام:</span> <span>رضا دهقانی</span></li>
 		            	<li class="d-flex"><span>سابقه کاری:</span> <span>شش ماه</span></li>
-		            	<li class="d-flex"><span>آدرس:</span> <span>استان خراسان جنوبی، شهرستان بیرجند</span></li>
+		            	<li class="d-flex"><span>آدرس:</span> <span>استان خراسان جنوبی، شهرستان نهبندان</span></li>
 		            	<li class="d-flex"><span>ایمیل:</span> <a href="mailto:reza@hireza.ir">reza@hireza.ir</a></li>
 		            	<li class="d-flex"><span>شماره تلفن: </span>
 							<a href="tel:09927686490">09927686490</a>
