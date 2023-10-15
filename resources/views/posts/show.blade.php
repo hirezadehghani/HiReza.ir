@@ -1,6 +1,6 @@
 <x-layout>
     
-<section class="hero-wrap js-fullheight text-right" @if(isset($post->thumbnail)) style="background-image: url('{{asset('storage/' . $post->thumbnail) }}');" @endif data-stellar-background-ratio="0.5">
+<section class="hero-wrap js-fullheight text-right"style="background-image: url('@isset($post->thumbnail){{asset('images/1024-1024.png')}} @else {{asset('/images/1024-1024.png') }}'); @endisset" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">

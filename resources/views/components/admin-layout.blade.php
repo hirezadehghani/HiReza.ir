@@ -22,7 +22,7 @@
         <nav class="md:flex md:justify-between md:items-center">
             <div>
                 <a href="/">
-                    <img src="/images/logo.png" alt="Laracasts Logo">
+                    <img src="/images/128-47.png" alt="Hireza Logo">
                 </a>
             </div>
 

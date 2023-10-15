@@ -6,7 +6,7 @@
             @if(isset($post->thumbnail))
         <div class="flex-1 lg:ml-8">
             <a href="/posts/{{ $post->slug }}">
-                <img src="{{asset('storage/' . $post->thumbnail) }}" alt="{{ $post->thumbnail_alt }}" class="rounded-xl">
+                <img src="@isset ($post->thumbnail){{asset('storage/' . $post->thumbnail)}} @else{{asset('images/1024-1024.png')}}@endisset" alt="@isset($post->thubmnail_alt) {{$post->thumbnail_alt}} @else {{'تصویر پیشفرض پست‌های بدون تصویر'}} @endisset" class="rounded-xl">
             </a>
         </div>
             @endif

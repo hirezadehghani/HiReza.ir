@@ -9734,7 +9734,7 @@ body {
   border-radius: 0.5rem;
   position: relative;
   width: 350px; /* post card width */
-  margin: 1rem;
+  margin: 0.5rem;
   transition: 250ms all ease-in-out;
   cursor: pointer;
 }
@@ -9754,7 +9754,7 @@ body {
 .category-tag {
   font-size: 0.8rem;
   font-weight: bold;
-  color: white; /* text color */
+  color: black; /* text color */
   background: red;  /* text background color */
   padding: 0.5rem 1.3rem 0.5rem 1rem;
   text-transform: uppercase;
@@ -9765,7 +9765,7 @@ body {
 }
 /* 1st catagory text background color */
 .popular {
-  background: #ef257a;
+  background: #ffbd39;
 }
 /* 2st catagory text background color */
 .technology {
