@@ -1,0 +1,42 @@
+[06-Sep-2021 13:13:14 Asia/Tehran] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/tayiir1/public_html/projects/doa/include/config.php:5
+Stack trace:
+#0 /home/tayiir1/public_html/projects/doa/include/config.php(5): PDO->__construct('mysql:host=loca...', 'root', 'o1CjXoBdb2$.')
+#1 /home/tayiir1/public_html/projects/doa/include/header.php(3): require_once('/home/tayiir1/p...')
+#2 /home/tayiir1/public_html/projects/doa/index.php(2): require_once('/home/tayiir1/p...')
+#3 {main}
+  thrown in /home/tayiir1/public_html/projects/doa/include/config.php on line 5
+[06-Sep-2021 13:13:15 Asia/Tehran] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/tayiir1/public_html/projects/doa/include/config.php:5
+Stack trace:
+#0 /home/tayiir1/public_html/projects/doa/include/config.php(5): PDO->__construct('mysql:host=loca...', 'root', 'o1CjXoBdb2$.')
+#1 /home/tayiir1/public_html/projects/doa/include/header.php(3): require_once('/home/tayiir1/p...')
+#2 /home/tayiir1/public_html/projects/doa/index.php(2): require_once('/home/tayiir1/p...')
+#3 {main}
+  thrown in /home/tayiir1/public_html/projects/doa/include/config.php on line 5
+[06-Sep-2021 13:14:23 Asia/Tehran] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'tayiir1_projects'@'localhost' to database 'doa' in /home/tayiir1/public_html/projects/doa/include/config.php:5
+Stack trace:
+#0 /home/tayiir1/public_html/projects/doa/include/config.php(5): PDO->__construct('mysql:host=loca...', 'tayiir1_project...', 'hamidd66')
+#1 /home/tayiir1/public_html/projects/doa/include/header.php(3): require_once('/home/tayiir1/p...')
+#2 /home/tayiir1/public_html/projects/doa/index.php(2): require_once('/home/tayiir1/p...')
+#3 {main}
+  thrown in /home/tayiir1/public_html/projects/doa/include/config.php on line 5
+[06-Sep-2021 13:14:24 Asia/Tehran] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'tayiir1_projects'@'localhost' to database 'doa' in /home/tayiir1/public_html/projects/doa/include/config.php:5
+Stack trace:
+#0 /home/tayiir1/public_html/projects/doa/include/config.php(5): PDO->__construct('mysql:host=loca...', 'tayiir1_project...', 'hamidd66')
+#1 /home/tayiir1/public_html/projects/doa/include/header.php(3): require_once('/home/tayiir1/p...')
+#2 /home/tayiir1/public_html/projects/doa/index.php(2): require_once('/home/tayiir1/p...')
+#3 {main}
+  thrown in /home/tayiir1/public_html/projects/doa/include/config.php on line 5
+[06-Sep-2021 13:14:26 Asia/Tehran] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'tayiir1_projects'@'localhost' to database 'doa' in /home/tayiir1/public_html/projects/doa/include/config.php:5
+Stack trace:
+#0 /home/tayiir1/public_html/projects/doa/include/config.php(5): PDO->__construct('mysql:host=loca...', 'tayiir1_project...', 'hamidd66')
+#1 /home/tayiir1/public_html/projects/doa/include/header.php(3): require_once('/home/tayiir1/p...')
+#2 /home/tayiir1/public_html/projects/doa/index.php(2): require_once('/home/tayiir1/p...')
+#3 {main}
+  thrown in /home/tayiir1/public_html/projects/doa/include/config.php on line 5
+[06-Sep-2021 13:14:27 Asia/Tehran] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'tayiir1_projects'@'localhost' to database 'doa' in /home/tayiir1/public_html/projects/doa/include/config.php:5
+Stack trace:
+#0 /home/tayiir1/public_html/projects/doa/include/config.php(5): PDO->__construct('mysql:host=loca...', 'tayiir1_project...', 'hamidd66')
+#1 /home/tayiir1/public_html/projects/doa/include/header.php(3): require_once('/home/tayiir1/p...')
+#2 /home/tayiir1/public_html/projects/doa/index.php(2): require_once('/home/tayiir1/p...')
+#3 {main}
+  thrown in /home/tayiir1/public_html/projects/doa/include/config.php on line 5
