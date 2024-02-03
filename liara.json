@@ -2,6 +2,8 @@
     "platform": "laravel",
     "app": "hireza",
     "laravel": {
-      "phpVersion": "8.2"
+      "phpVersion": "8.2",
+      "configCache": true,
+      "routeCache": true,
     }
   }
