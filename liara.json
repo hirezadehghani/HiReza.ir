@@ -9,7 +9,7 @@
     "disks": [
       {
         "name": "hireza-disk",
-        "mountTo": "public/"
+        "mountTo": "storage/app/public/"
       }
     ]
   }
