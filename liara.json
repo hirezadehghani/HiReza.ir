@@ -4,6 +4,6 @@
     "laravel": {
       "phpVersion": "8.2",
       "configCache": true,
-      "routeCache": true,
+      "routeCache": true
     }
   }
