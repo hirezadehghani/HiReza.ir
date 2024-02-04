@@ -114,8 +114,7 @@
             <h2 class="ftco-heading-2">سوالی دارید؟</h2>
             <div class="block-23 mb-3">
               <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">استان خراسان جنوبی، بیرجند</span></li>
-                <li><a href="tel:09927686490"><span class="icon icon-phone"></span>09927686490</a></li>
+              {{-- address phpne --}}
                 <li><a href="mailto:reza@hireza.ir"><span class="icon icon-envelope"></span>reza@hireza.ir</a></li>
               </ul>
             </div>
