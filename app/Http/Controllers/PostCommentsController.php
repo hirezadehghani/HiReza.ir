@@ -20,7 +20,8 @@ class PostCommentsController extends Controller
             $request->validate([
                 'body' => 'required|min:3',
                 'guestEmail' => 'required|email',
-                'parent_id' => 'numeric'
+                'parent_id' => 'numeric',
+                'arcaptcha-token' => 'arcaptcha',
             ]);
             
             $post->comments()->create([

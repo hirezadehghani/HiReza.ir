@@ -21,12 +21,13 @@
           
         <!-- LIKE BUTTON -->
       <form method="post" action="/posts/{{$post->slug}}/like" id="like">
-        @csrf
+        @csrf        
         <!-- <x-form.input name="like" type="number" value="1" label="" hidden></x-form.input> -->
         <x-form.button>
         <span class="icon-heart"></span>
         {{$post->like}}
       </x-form-button>
+
       </form>
         <!-- END LIKE BUTTON -->
 

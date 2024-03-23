@@ -22,6 +22,11 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/app.css">
 
+
+  {{-- CAPTCHA CODE --}}
+  {!! ArCaptcha::getScript() !!}
+  {{-- CAPTCHA CODE --}}
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
