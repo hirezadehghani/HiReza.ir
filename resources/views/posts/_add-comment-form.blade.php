@@ -32,10 +32,11 @@
         <input hidden name="comment-id" value=""
          autocomplete="off"></input>
         
+        {{-- captcha widget --}}
         <br>
-          {!! ArCaptcha::getWidget([ 'size'=>'invisible','callback'=>'callback']) !!}
-          
+        @arcaptchaWidget
         <br>
+
         <x-form.button>بفرست بِره</x-submit-button>
 
                 </form>
