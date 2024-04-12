@@ -1,6 +1,6 @@
 {
     "platform": "laravel",
-    "app": "hireza",
+    "app": "hireza-projects",
     "laravel": {
       "phpVersion": "8.2",
       "configCache": true,
