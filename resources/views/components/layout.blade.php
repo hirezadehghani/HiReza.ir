@@ -27,6 +27,15 @@
   {!! ArCaptcha::getScript() !!}
   {{-- CAPTCHA CODE --}}
 
+  {{-- MU CHAT SCRIPT --}}
+  <script
+    defer
+    id="clvdhhtq80v3uoe01holljezv"
+    data-name="muchat-chat-bubble"
+    src="https://cdn.mu.chat/widget/chat-bubble/chat-bubble.js"
+  >
+  </script>
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
