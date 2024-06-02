@@ -32,7 +32,7 @@
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 					  <span class="subheading"></span>
-			            <h1 class="mb-4 mt-3">من یک <span>مهندس نرم افزار</span>هستم</h1>
+			            <h1 class="mb-4 mt-3">با خلق <span>هر محصول یاپروژه</span> یک داستان جدید آغاز میشه</h1>
 			            <p><a href="#" class="btn btn-primary py-3 px-4">درخواست همکاری</a> <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">نمونه کارهای من</a></p>
 		            </div>
 		          </div>

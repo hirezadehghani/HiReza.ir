@@ -10,16 +10,16 @@
     		<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2023</span>
+    					<span class="date">2019-2023</span>
     					<h2>لیسانس مهندسی کامپیوتر - نرم افزار</h2>
     					<span class="position"><a href="http://birjandut.ac.ir" target="_blank" rel="noopener noreferrer">دانشگاه صنعتی بیرجند</a></span>
     					<p class="mt-4">دستیار استاد در درس برنامه سازی پیشرفته، نویسندگی در فصل نامه اشاره گر دانشگاه خوارزمی، موضوع پروژه پایانی: طراحی و توسعه API Hub</p>
     				</div>
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2018</span>
-    					<h2>دیپلم ریاضی و فیزیک</h2>
-    					<span class="position">دبیرستان نمونه دکتر محمدعلی جوادی</span>
-    					<p class="mt-4">شرکت در مرحله استانی المپیاد ریاضی، رتبه اول در نهبندان در مسابقات ملی مهارت در رشته طراحی وب</p>
+    					<span class="date">2023-اکنون</span>
+    					<h2>توسعه دهنده وب</h2>
+    					<span class="position"><a href="http://puzzley.net" target="_blank" rel="noopener noreferrer">پازلی</a></span>
+    					<p class="mt-4">خلق ارزش به عنوان عضوی از تیم فنی با هدف ساخت اپلیکیشن با کمترین هزینه و زمان ممکن.</p>
     				</div>
     			</div>
 

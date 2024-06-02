@@ -12,33 +12,35 @@
         </div>
     		<div class="row">
 					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
+						<a href="/#contact-section" class="services-1">
 							<span class="icon">
 								<i class="flaticon-ideas"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">مهندسی نرم‌افزار</h3>
+								<h3 class="mb-5">
+								مهندسی پروژه نرم‌افزاری
+								</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
+						<a href="/#contact-section" class="services-1">
 							<span class="icon">
 								<i class="flaticon-analysis"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">توسعه وب</h3>
+								<h3 class="mb-5">توسعه وب (‌Back-end)</h3>
 							</div>
 						</a>
 					</div>
 
 					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
+						<a href="/#contact-section" class="services-1">
 							<span class="icon">
 								<i class="flaticon-analysis"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">توسعه وب اپلیکیشن</h3>
+								<h3 class="mb-5">توسعه ای پی آی (API)</h3>
 							</div>
 						</a>
 					</div>
