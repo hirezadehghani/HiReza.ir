@@ -129,7 +129,7 @@
             <div class="block-23 mb-3">
               <ul>
               {{-- address phpne --}}
-                <li><a href="mailto:reza@hireza.ir"><span class="icon icon-envelope"></span>reza@hireza.ir</a></li>
+                <li><a href="mailto:hello.dehghani@gmail.com"><span class="icon icon-envelope"></span>hello.dehghani@gmail.com</a></li>
               </ul>
             </div>
           </div>

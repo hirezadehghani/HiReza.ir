@@ -18,7 +18,7 @@
           			<span class="icon-mail_outline"></span>
           		</div>
           		<h3 class="mb-4">آدرس ایمیل</h3>
-	            <p><a href="mailto:reza@hireza.ir">reza@hireza.ir</a></p>
+	            <p><a href="mailto:hello.dehghani@gmail.com">hello.dehghani@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-6 d-flex ftco-animate">

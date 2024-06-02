@@ -19,7 +19,7 @@
 					</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>نام:</span> <span>رضا دهقانی</span></li>
-		            	<li class="d-flex"><span>ایمیل:</span> <a href="mailto:reza@hireza.ir">reza@hireza.ir</a></li>
+		            	<li class="d-flex"><span>ایمیل:</span> <a href="mailto:hello.dehghani@gmail.com">hello.dehghani@gmail.com</a></li>
 						{{-- address and phone removed --}}
 		            </ul>
 		          </div>
