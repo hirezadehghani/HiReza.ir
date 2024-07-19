@@ -129,7 +129,7 @@
             <div class="block-23 mb-3">
               <ul>
               {{-- address phpne --}}
-                <li><a href="mailto:hello.dehghani@gmail.com"><span class="icon icon-envelope"></span>hello.dehghani@gmail.com</a></li>
+                <li><a href="mailto:&#x68;&#x65;&#x6C;&#x6C;&#x6F;&#x2E;&#x64;&#x65;&#x68;&#x67;&#x68;&#x61;&#x6E;&#x69;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;"><span class="icon icon-envelope"></span>&#x68;&#x65;&#x6C;&#x6C;&#x6F;&#x2E;&#x64;&#x65;&#x68;&#x67;&#x68;&#x61;&#x6E;&#x69;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;</a></li>
               </ul>
             </div>
           </div>

@@ -19,7 +19,7 @@
 					</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>نام:</span> <span>رضا دهقانی</span></li>
-		            	<li class="d-flex"><span>ایمیل:</span> <a href="mailto:hello.dehghani@gmail.com">hello.dehghani@gmail.com</a></li>
+		            	<li class="d-flex"><span>ایمیل:</span> <a href="mailto:&#x68;&#x65;&#x6C;&#x6C;&#x6F;&#x2E;&#x64;&#x65;&#x68;&#x67;&#x68;&#x61;&#x6E;&#x69;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">&#x68;&#x65;&#x6C;&#x6C;&#x6F;&#x2E;&#x64;&#x65;&#x68;&#x67;&#x68;&#x61;&#x6E;&#x69;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;</a></li>
 						{{-- address and phone removed --}}
 		            </ul>
 		          </div>

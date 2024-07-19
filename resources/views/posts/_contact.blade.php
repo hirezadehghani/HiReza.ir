@@ -18,7 +18,7 @@
           			<span class="icon-mail_outline"></span>
           		</div>
           		<h3 class="mb-4">آدرس ایمیل</h3>
-	            <p><a href="mailto:hello.dehghani@gmail.com">hello.dehghani@gmail.com</a></p>
+	            <p><a href="mailto:&#x68;&#x65;&#x6C;&#x6C;&#x6F;&#x2E;&#x64;&#x65;&#x68;&#x67;&#x68;&#x61;&#x6E;&#x69;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">&#x68;&#x65;&#x6C;&#x6C;&#x6F;&#x2E;&#x64;&#x65;&#x68;&#x67;&#x68;&#x61;&#x6E;&#x69;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-6 d-flex ftco-animate">
