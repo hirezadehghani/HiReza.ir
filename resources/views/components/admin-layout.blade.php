@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </script>
 
     <!-- <script src="{{ asset('/assets/js/jquery.min.js') }}"></script> -->
-    <script src="{{asset('/assets/js/alpine.min.js')}}" defer></script>
+    <script src="{{public_path('assets/js/alpine.min.js')}}" defer></script>
 
 </body>
 </html>
