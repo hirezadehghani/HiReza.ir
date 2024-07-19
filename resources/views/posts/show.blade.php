@@ -144,16 +144,13 @@
 
             @endif
 
-            <div class="sidebar-box ftco-animate">
+            {{-- <div class="sidebar-box ftco-animate">
               <h3 class="heading-sidebar">جمله تصادفی از جلال آل احمد</h3>
-              <?php 
-                use faker;
-                $faker = Faker\Factory::create('fa_IR');
-              ?>
-              <p>{{ $faker->realText(300,4) . '...' }}</p>
+              
+              <p></p>
             </div>
           </div>
-          
+           --}}
         </div>
       </div>
     </section> <!-- .section -->
