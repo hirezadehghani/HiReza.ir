@@ -1,6 +1,6 @@
 <x-layout>
     
-<section class="hero-wrap js-fullheight text-right"style="background-image: url('@isset($post->thumbnail){{asset('storage/' . $post->thumbnail)}} @else {{asset('/images/1024-1024.png') }}'); @endisset" data-stellar-background-ratio="0.5">
+<section class="hero-wrap js-fullheight text-right"style="background-image: url('@isset($post->thumbnail){{secure_asset('storage/' . $post->thumbnail)}} @else {{secure_asset('/images/1024-1024.png') }}'); @endisset" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -114,7 +114,7 @@
             @endif
               <div class="block-21 mb-4 d-flex">
               @if(isset($recentPost->thumbnail))  
-                <a class="blog-img ml-4" style="background-image: url('<?= asset('storage/' . $recentPost->thumbnail) ?>');"></a>
+                <a class="blog-img ml-4" style="background-image: url('<?= secure_asset('storage/' . $recentPost->thumbnail) ?>');"></a>
                 @else
                     <div class="blog-img ml-4"></div>
                 @endif

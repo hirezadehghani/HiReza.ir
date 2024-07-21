@@ -14,7 +14,7 @@
                                             @if(isset($post->thumbnail))
                                             <div class="flex-shrink-0 h-10 w-10">
                                                 <img class="h-10 w-10 rounded-full"
-                                                    src="{{ asset('storage/' . $post->thumbnail)}}"
+                                                    src="{{ secure_asset('storage/' . $post->thumbnail)}}"
                                                     alt="">
                                             </div>
                                             @endif

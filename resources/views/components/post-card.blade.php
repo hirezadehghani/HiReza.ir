@@ -6,7 +6,7 @@
       <!– banner image and text –>
         <div class="post-card-banner">
           <p class="category-tag popular">{{ $post->category->name }}</p>
-          <img class="banner-img" src="@isset ($post->thumbnail){{asset('storage/' . $post->thumbnail)}} @else{{asset('images/1024-1024.png')}}@endisset" alt="@isset($post->thubmnail_alt) {{$post->thumbnail_alt}} @else {{'تصویر پیشفرض پست‌های بدون تصویر'}} @endisset">
+          <img class="banner-img" src="@isset ($post->thumbnail){{secure_asset('storage/' . $post->thumbnail)}} @else{{secure_asset('images/1024-1024.png')}}@endisset" alt="@isset($post->thubmnail_alt) {{$post->thumbnail_alt}} @else {{'تصویر پیشفرض پست‌های بدون تصویر'}} @endisset">
         </div>
         <!– #tags,heading,description –>
           <div class="post-card-body">
@@ -18,7 +18,7 @@
             <!– Profile image, name, followers –>
               <div class="post-card-profile">
 
-                <img class="profile-img" src="{{asset('images/profile.png')}}" alt="{{$post->author->name}}">
+                <img class="profile-img" src="{{secure_asset('images/profile.png')}}" alt="{{$post->author->name}}">
 
                 <div class="post-card-profile-info">
                   <h3 class="profile-name">{{ $post->author->name }}</h3>

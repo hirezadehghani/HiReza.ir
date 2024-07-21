@@ -13,7 +13,7 @@ class CKEditorController extends Controller
             $fileName = $fileName.'_'.time().'.'.$extension;
             $request->file('upload')->move(public_path('storage/thumbnails'), $fileName);
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-            $url = asset('storage/thumbnails/'.$fileName);
+            $url = secure_asset('storage/thumbnails/'.$fileName);
             $msg = 'عکس با موفقیت بارگزاری شد!';
             $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
 

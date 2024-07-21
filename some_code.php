@@ -16,7 +16,7 @@
 <!-- <article class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
               @if(isset($post->thumbnail))  
-            <a href="/posts/{{ $post->slug }}" class="block-20" style="background-image: url('<?= asset('storage/' . $post->thumbnail) ?>');">
+            <a href="/posts/{{ $post->slug }}" class="block-20" style="background-image: url('<?= secure_asset('storage/' . $post->thumbnail) ?>');">
               </a>
               @endif
               <div class="text mt-3 float-right d-block">

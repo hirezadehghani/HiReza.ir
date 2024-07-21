@@ -2,7 +2,7 @@
         <article>
                 <li class="comment @if(isset($isreply) && ($isreply === true)) {{ 'children' }} @endif">
                   <div class="vcard bio">
-                    <img src="{{asset('images/person_1.jpg')}}" alt="Image placeholder">
+                    <img src="{{secure_asset('images/person_1.jpg')}}" alt="Image placeholder">
                   </div>
                   <header class="comment-body">
                     <h3 id="comment-name">@if (!isset($comment->author->username))

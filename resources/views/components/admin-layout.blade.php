@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <title>های رضا | غواصی در اقیانوس کامپیوتر</title>
-<link href= "{{ asset('assets/css/tailwind.min.css') }}" rel="stylesheet">
-<link href= "{{ asset('app.css') }}" rel="stylesheet">
+<link href= "{{ secure_asset('assets/css/tailwind.min.css') }}" rel="stylesheet">
+<link href= "{{ secure_asset('app.css') }}" rel="stylesheet">
 <meta name="robots" content="noindex">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/tag-it/jquery.tagit.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/tag-it/tagit.ui-zendesk.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ secure_asset('assets/css/tag-it/jquery.tagit.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ secure_asset('assets/css/tag-it/tagit.ui-zendesk.css') }}">
 <style>
     html {
         scroll-behavior: smooth;
@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
     </script>
 
-    <!-- <script src="{{ asset('/assets/js/jquery.min.js') }}"></script> -->
-    <script src="{{public_path('assets/js/alpine.min.js')}}" defer></script>
+    <!-- <script src="{{ secure_asset('/assets/js/jquery.min.js') }}"></script> -->
+    <script src="{{ secure_asset('assets/js/alpine.min.js')}}" defer></script>
 
 </body>
 </html>

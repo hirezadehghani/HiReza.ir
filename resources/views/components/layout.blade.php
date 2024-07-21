@@ -175,7 +175,7 @@
   <script src="/assets/js/aos.js"></script>
   <script src="/assets/js/jquery.animateNumber.min.js"></script>
   <script src="/assets/js/scrollax.min.js"></script>
-  <script src="{{asset('/assets/js/alpine.min.js')}}" defer></script>
+  <script src="{{secure_asset('/assets/js/alpine.min.js')}}" defer></script>
 
   <script src="/assets/js/main.js"></script>
 

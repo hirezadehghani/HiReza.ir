@@ -12,7 +12,7 @@
                         <x-adminForm.input name="thumbnail" label="تصویر بندانگشتی" type="file" :value="old('thumbnail', $post->thumbnail)" />
                     </div>
                 @if(isset($post->thumbnail))
-                    <img src="{{ asset('storage/' . $post->thumbnail) }}" class="rounded-xl ml-6" width="100"
+                    <img src="{{ secure_asset('storage/' . $post->thumbnail) }}" class="rounded-xl ml-6" width="100"
                     >
                 @endif
                 </div>
@@ -40,9 +40,9 @@
                 <x-adminForm.error name="category" />
             </x-adminForm.section>
 
-            <script src="{{ asset('/assets/js/tag-it/jquery-1.10.2.min.js') }}" type="text/javascript" charset="utf-8"></script>
-            <script src="{{ asset('/assets/js/tag-it/jquery-ui.min.js') }}" type="text/javascript" charset="utf-8"></script>
-            <script src="{{ asset('/assets/js/tag-it/tag-it.min.js') }}" type="text/javascript" charset="utf-8"></script>
+            <script src="{{ secure_asset('/assets/js/tag-it/jquery-1.10.2.min.js') }}" type="text/javascript" charset="utf-8"></script>
+            <script src="{{ secure_asset('/assets/js/tag-it/jquery-ui.min.js') }}" type="text/javascript" charset="utf-8"></script>
+            <script src="{{ secure_asset('/assets/js/tag-it/tag-it.min.js') }}" type="text/javascript" charset="utf-8"></script>
 
             <span class="mb-3 block">کلمات کلیدی</span>
             <ul id="tags">

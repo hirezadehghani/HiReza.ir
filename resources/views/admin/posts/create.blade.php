@@ -28,9 +28,9 @@
             </x-adminForm.section>
 
             <!-- TAG IT PLUGIN JS -->
-            <script src="{{ asset('/assets/js/tag-it/jquery-1.10.2.min.js') }}" type="text/javascript" charset="utf-8"></script>
-            <script src="{{ asset('/assets/js/tag-it/jquery-ui.min.js') }}" type="text/javascript" charset="utf-8"></script>
-            <script src="{{ asset('/assets/js/tag-it/tag-it.min.js') }}" type="text/javascript" charset="utf-8"></script>
+            <script src="{{ secure_asset('/assets/js/tag-it/jquery-1.10.2.min.js') }}" type="text/javascript" charset="utf-8"></script>
+            <script src="{{ secure_asset('/assets/js/tag-it/jquery-ui.min.js') }}" type="text/javascript" charset="utf-8"></script>
+            <script src="{{ secure_asset('/assets/js/tag-it/tag-it.min.js') }}" type="text/javascript" charset="utf-8"></script>
 
             <x-adminForm.input name="tags" id="allTags" hidden label="کلمه کلیدی" />
             <ul id="tags">
