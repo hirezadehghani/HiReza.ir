@@ -18,7 +18,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="30"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:30%">
-								  <span>متوسط</span>
+								  {{-- <span>متوسط</span> --}}
 							  	</div>
 							</div>
 						</div>
@@ -29,7 +29,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="35"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:35%">
-								  <span>مقدماتی</span>
+								  {{-- <span>مقدماتی</span> --}}
 								</div>
 							</div>
 						</div>
@@ -40,7 +40,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="60"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
-								  <span>متوسط</span>
+								  {{-- <span>متوسط</span> --}}
 							  	</div>
 							</div>
 						</div>
@@ -51,7 +51,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								  <span>پیشرفته</span>  	
+								  {{-- <span>پیشرفته</span>  	 --}}
 							</div>
 							</div>
 						</div>
@@ -62,7 +62,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="33"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:33%">
-								  <span>مقدماتی</span>  	
+								  {{-- <span>مقدماتی</span>  	 --}}
 							</div>
 							</div>
 						</div>
@@ -73,7 +73,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="40"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:40%">
-								  <span class="">مقدماتی</span>  	
+								  {{-- <span class="">مقدماتی</span>  	 --}}
 							</div>
 							</div>
 						</div>
@@ -84,7 +84,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="40"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:40%">
-								  <span>متوسط</span>  	
+								  {{-- <span>متوسط</span>  	 --}}
 							</div>
 							</div>
 						</div>
@@ -95,7 +95,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="25"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:25%">
-								  <span>مقدماتی</span>  	
+								  {{-- <span>مقدماتی</span>  	 --}}
 							</div>
 							</div>
 						</div>
@@ -106,7 +106,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								  <span>خوب</span>  	
+								  {{-- <span>خوب</span>  	 --}}
 							</div>
 							</div>
 						</div>
@@ -117,7 +117,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
-								  <span>متوسط</span>  	
+								  {{-- <span>متوسط</span>  	 --}}
 							</div>
 							</div>
 						</div>
@@ -128,7 +128,7 @@
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="30"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
-								  <span>متوسط</span>
+								  {{-- <span>متوسط</span> --}}
 							  	</div>
 							</div>
 						</div>
