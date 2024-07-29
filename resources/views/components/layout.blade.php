@@ -124,6 +124,7 @@
               <li><a href="https://hireza.ir/#services-section"><span class="icon-long-arrow-left ml-2"></span>توسعه وب اپلیکیشن</a></li>
               <li><a href="https://hireza.ir/#services-section"><span class="icon-long-arrow-left ml-2"></span>توسعه ای‌پی‌آی (API)</a></li>
             </ul>
+            </div>
         </div>
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
@@ -156,8 +157,6 @@
       </div>
     </div>
   </footer>
-
-
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
