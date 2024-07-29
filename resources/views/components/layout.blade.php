@@ -94,10 +94,12 @@
               <a href="https://hireza.ir/posts/مسیر-رضا-دهقانی">(ادامه)</a>
             </p>
             <ul class="ftco-footer-social list-unstyled float-md-right float-right mt-5">
-              <li class="ftco-animate"><a href="https://github.com/reza-dehghani" target="_blank"><span class="icon-github"></span></a></li>
-              <li class="ftco-animate"><a href="https://www.linkedin.com/in/hi-reza-dehghani/" target="_blank"><span class="icon-linkedin"></span></a></li>
+              <li class="ftco-animate"><a href="https://github.com/hirezadehghani" target="_blank"><span class="icon-github"></span></a></li>
+              <li class="ftco-animate"><a href="https://stackoverflow.com/users/15791696/hirezadehghani" target="_blank"><span class="icon-stack-overflow"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.linkedin.com/in/hirezadehghani/" target="_blank"><span class="icon-linkedin"></span></a></li>
               <li class="ftco-animate"><a href="https://t.me/HiRezaDehghani" target="_blank"><span class="icon-telegram"></span></a></li>
-              <li class="ftco-animate"><a href="https://dribbble.com/iamrexa" target="_blank"><span class="icon-dribbble"></span></a></li>
+              <li class="ftco-animate"><a href="https://hirezadehghani.medium.com/" target="_blank"><span class="icon-medium"></span></a></li>
+              {{-- <li class="ftco-animate"><a href="https://dribbble.com/iamrexa" target="_blank"><span class="icon-dribbble"></span></a></li> --}}
             </ul>
           </div>
         </div>
