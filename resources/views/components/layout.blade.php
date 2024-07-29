@@ -119,11 +119,11 @@
           <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">خدمات</h2>
             <ul class="list-unstyled">
+              <li><a href="https://hireza.ir/#services-section"><span class="icon-long-arrow-left ml-2"></span>مهندسی پروژه نرم‌افزاری</a></li>
               <li><a href="https://hireza.ir/#services-section"><span class="icon-long-arrow-left ml-2"></span>توسعه وب</a></li>
-              <li><a href="https://hireza.ir/#services-section"><span class="icon-long-arrow-left ml-2"></span>طراحی وب</a></li>
               <li><a href="https://hireza.ir/#services-section"><span class="icon-long-arrow-left ml-2"></span>توسعه وب اپلیکیشن</a></li>
+              <li><a href="https://hireza.ir/#services-section"><span class="icon-long-arrow-left ml-2"></span>توسعه ای‌پی‌آی (API)</a></li>
             </ul>
-          </div>
         </div>
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
