@@ -41,8 +41,8 @@
             </div>
             @endif
             <div class="about-author d-flex p-4 bg-dark">
-              <div class="bio ml-5">
-                <img src="/images/profile.png" alt="Image placeholder" class="img-fluid mb-4">
+              <div class="bio ml-3">
+                <img src="/images/profile.png" alt="Image placeholder" class="img-fluid mb-2">
               </div>
               <div class="desc">
                 <h3><a href="/?author={{ $post->author->username }}">{{$post->author->name}}</a></h3>
