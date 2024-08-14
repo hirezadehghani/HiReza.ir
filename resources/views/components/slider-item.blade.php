@@ -4,14 +4,14 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-        <div class="one-third js-fullheight order-md-last img" style="background-image:url({{$image_url}});">
+        <div class="one-third js-fullheight order-md-last img" style="background-image:url(@isset($image_url)'$image_url'@else'images/posts_thumbnail.jpeg'@endisset);">
             <div class="overlay"></div>
     </div>
         <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
         <div class="text">
             <span class="subheading">{{$sub_heading}}</span>
             <h1 class="mb-4 mt-3">
-                {!! str_limit($short_description, 40) !!}
+                {!! str_limit($short_description, 50) !!}
             </h1>
             <p>
             @isset($post_url)
