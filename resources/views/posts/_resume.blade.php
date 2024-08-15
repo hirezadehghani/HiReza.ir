@@ -16,10 +16,10 @@
     					<p class="mt-4">دستیار استاد در درس برنامه سازی پیشرفته، نویسندگی در فصل نامه اشاره گر دانشگاه خوارزمی، موضوع پروژه پایانی: طراحی و توسعه API Hub</p>
     				</div>
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2023-اکنون</span>
+    					<span class="date">2023-2024</span>
     					<h2>توسعه دهنده وب</h2>
     					<span class="position"><a href="http://puzzley.net" target="_blank" rel="noopener noreferrer">پازلی</a></span>
-    					<p class="mt-4">خلق ارزش به عنوان عضوی از تیم فنی با هدف ساخت اپلیکیشن با کمترین هزینه و زمان ممکن.</p>
+    					<p class="mt-4">خلق ارزش به عنوان عضوی از تیم فنی</p>
     				</div>
     			</div>
 
