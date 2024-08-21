@@ -34,10 +34,10 @@ class DatabaseSeeder extends Seeder
 
         // create admin user tuple
             DB::table('users')->insert([
-            'username' => 'admin',
+            'username' => 'reza-dehghani',
             'name' => 'Reza',
             'email' => 'test@hireza.ir',
-            'password' => bcrypt('secret'),
+            'password' => bcrypt('password'),
         ]);
 
         // User::truncate();
