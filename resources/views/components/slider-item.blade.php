@@ -4,7 +4,7 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-        <div class="one-third js-fullheight order-md-last img" style="background-image:url(@isset($image_url){{secure_asset('storage/' . $image_url)}} @else {{secure_asset('/images/1024-1024.png') }}'); @endisset);">
+        <div class="one-third js-fullheight order-md-last img" style="background-image:url(@isset($image_url){{secure_asset('storage/' . $image_url)}} @else 'images/posts_thumbnail.jpeg' @endisset);">
             <div class="overlay"></div>
         </div>
         <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
