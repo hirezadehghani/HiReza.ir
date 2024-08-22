@@ -27,8 +27,8 @@
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
               <div class="text">
               	<p class="mb-4">
-	                <span class="number" data-number="6">6</span>
-	                <span>پروژه موفقیت آمیز</span>
+	                <span class="number" data-number="1">1</span>
+	                <span>سال فعالیت حرفه‌ای</span>
                 </p>
                 <p><a href="/#contact-section" class="btn btn-primary py-3 px-3">درخواست رزومه</a></p>
               </div>
