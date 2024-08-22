@@ -6,8 +6,8 @@
             <div class="block-18">
               <div class="text">
                 <a href="#projects-section">
-                <strong class="number" data-number="6">0</strong>
-                <span>پروژه تکمیل شده</span>
+                <strong class="number" data-number="1401">0</strong>
+                <span>آغاز فعالیت</span>
                 </a>
               </div>
             </div>
