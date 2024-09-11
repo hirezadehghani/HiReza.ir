@@ -38,7 +38,7 @@ class SessionsController extends Controller
         }
 
         session()->regenerate();
-        return redirect()->back()->with('success','به به، ببین کی اومده ' . request()->user()->name . ' عزیز خوش برگشتی، رفیق!');
+        return redirect('/admin/posts')->with('success','به به، ببین کی اومده ' . request()->user()->name . ' عزیز خوش برگشتی، رفیق!');
 
 
         //  return back()
@@ -51,6 +51,6 @@ class SessionsController extends Controller
     {
         auth()->logout();
 
-        return redirect()->back()->with('success', 'خدافظ، بای بای؛ قول بده زود برگردی، منتظرتیم!');
+        return redirect('/')->with('success', 'خدافظ، بای بای؛ قول بده زود برگردی، منتظرتیم!');
     }
 }
