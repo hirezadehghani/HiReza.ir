@@ -70,7 +70,18 @@ $(window).on('load', function (){
 
 <script>
 $(document).ready(function() {
-
+    // TODO: refactor this function and put it to a global file
+    $('#title').on('input', 
+        function (e) {
+            $('#slug').val(
+                function(){
+                let text = $('#title').val()
+                // TODO: Thiis regex for removing special characters from title not working at all :) 
+                text.replace(/^[^ !"`'#%&,:;<>=@{}~\$\(\)\*\+\/\\\?\[\]\^\|]+$/g, '')
+                return text.replace(/ /g, '-');
+            });
+        });
+        
         $("#tags").tagit({
             availableTags: [<?php for($i =0 ; $i < count($tags); $i++){ echo "'" . ($tags[$i]) . "',"; }?>],
             allowSpaces: true,
