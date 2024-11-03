@@ -64,7 +64,8 @@ $(document).ready(function() {
         });
 
             $("#tags").tagit({
-                availableTags: [<?php for($i =0 ; $i < count($tags); $i++){ echo "'" . ($tags[$i]) . "',"; }?>]
+                availableTags: [<?php for($i =0 ; $i < count($tags); $i++){ echo "'" . ($tags[$i]) . "',"; }?>] ,
+                allowSpaces: true,
             });
     });
 
