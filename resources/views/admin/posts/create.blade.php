@@ -27,6 +27,7 @@
                 <x-adminForm.error name="category"/>
             </x-adminForm.section>
 
+            {{--  TODO: make this jquery file import refactor and going it to a base file --}}
             <!-- TAG IT PLUGIN JS -->
             <script src="{{ secure_asset('/assets/js/tag-it/jquery-1.10.2.min.js') }}" type="text/javascript" charset="utf-8"></script>
             <script src="{{ secure_asset('/assets/js/tag-it/jquery-ui.min.js') }}" type="text/javascript" charset="utf-8"></script>
