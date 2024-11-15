@@ -63,7 +63,7 @@ class AdminPostController extends Controller
                                         ]);
     }
 
-    public function update(Post $post)
+    public function update(Post $post, Request $request)
     {
         $attributes = $this->validatePost($post);
 
@@ -72,6 +72,15 @@ class AdminPostController extends Controller
             $path = request()->file('thumbnail')->storeAs('thumbnails', $fileName, 'public');
             $attributes['thumbnail'] = $path;
         }
+        
+        //tags
+        $tagsName = [];
+        $tags = DB::table('post_tags')->select('tag')->get();
+        foreach ($tags as $tag){
+            array_push($tagsName, $tag->tag);
+        }
+
+        $this->storeTags($post->id, $request['tags']);
         $post->update($attributes);
 
         return redirect()->back()->with('success', 'مطلب بروزرسانی شد!');
@@ -106,23 +115,23 @@ class AdminPostController extends Controller
     public function storeTags($post, $tags)
     {
         $tags = explode(',', $tags);
-        foreach($tags as $tag){
-        $tag_attributes['tag'] = $tag;
-        PostTags::firstOrCreate([
-            'tag' => $tag
-        ]);
-        
-        $post_tags_posts_attributes['post_tags_id'] = DB::table('post_tags')->select('id')->where('tag', $tag)->get()[0]->id;
-        $post_tags_posts_attributes['post_id'] = $post;
-        PostTags_Posts::create($post_tags_posts_attributes);
-    }
+        foreach($tags as $tag)  {
+            $tag_attributes['tag'] = $tag;
+            PostTags::firstOrCreate([
+                'tag' => $tag
+            ]);
+            
+            $post_tags_posts_attributes['post_tags_id'] = DB::table('post_tags')->select('id')->where('tag', $tag)->get()[0]->id;
+            $post_tags_posts_attributes['post_id'] = $post;
+            PostTags_Posts::create($post_tags_posts_attributes);
+        }
     }
 
     public function selectAllTags()
     {
         $tagsName = [];
         $tags = DB::table('post_tags')->select('tag')->get();
-        foreach ($tags as $tag){
+        foreach ($tags as $tag) {
             array_push($tagsName, $tag->tag);
         }
         return $tagsName;
@@ -132,12 +141,10 @@ class AdminPostController extends Controller
     {
         $postTags = [];
         $tags_id = DB::table('post_tags__posts')->select('post_tags_id')->where('post_id', $post_id)->get();
-        foreach($tags_id as $tag_id)
-        {
+        foreach($tags_id as $tag_id) {
                 $postTagName = DB::table('post_tags')->select('tag')->where('id', $tag_id->post_tags_id)->get();
                 array_push($postTags, $postTagName[0]->tag);
         }
-
         return $postTags;
     }
 }
