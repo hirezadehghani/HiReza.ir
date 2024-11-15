@@ -117,13 +117,10 @@ class AdminPostController extends Controller
         $tags = explode(',', $tags);
         foreach($tags as $tag)  {
             $tag_attributes['tag'] = $tag;
-            PostTags::firstOrCreate([
-                'tag' => $tag
-            ]);
             
             $post_tags_posts_attributes['post_tags_id'] = DB::table('post_tags')->select('id')->where('tag', $tag)->get()[0]->id;
             $post_tags_posts_attributes['post_id'] = $post;
-            PostTags_Posts::create($post_tags_posts_attributes);
+            PostTags_Posts::updateOrCreate($post_tags_posts_attributes);
         }
     }
 
